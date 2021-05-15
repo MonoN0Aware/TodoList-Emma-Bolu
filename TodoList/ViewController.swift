@@ -17,11 +17,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hello world")
+        //print("hello world")
         
         self.title = "Tasks"
         tableView.delegate = self
         tableView.dataSource = self
+        
+        if  !UserDefaults().bool(forKey: "setup"){
+            UserDefaults().set(true,forKey: "setup")
+            UserDefaults().set(0,forKey: "count")
+        }
+        
+        
     }
     
     @IBAction func didTapAdd(){
