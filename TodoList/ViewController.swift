@@ -32,9 +32,19 @@ class ViewController: UIViewController {
     }
     
     func updateTasks() {
+        tasks.removeAll()
         guard let count = UserDefaults().value(forKey: "count")as? Int else{
             return
         }
+        for x in 0..<count {
+            if let task = UserDefaults.value(forKey: "task_\(x + 1)") as? String  {
+                tasks.append(task)
+                
+            }
+            
+        }
+        tableView.reloadData()
+        
     }
     
     @IBAction func didTapAdd(){
