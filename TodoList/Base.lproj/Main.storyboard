@@ -48,7 +48,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="1gQ-ej-mR1" id="oxN-Ik-PHm"/>
+                        <outlet property="tableView" destination="1gQ-ej-mR1" id="q53-vP-Q1x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,9 +62,26 @@
                     <view key="view" contentMode="scaleToFill" id="BUd-xW-xyX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-uK-a6i">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Nk5-wI-Vsh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LKq-uK-a6i" firstAttribute="top" secondItem="Nk5-wI-Vsh" secondAttribute="top" constant="12" id="JGA-PZ-j23"/>
+                            <constraint firstItem="Nk5-wI-Vsh" firstAttribute="bottom" secondItem="LKq-uK-a6i" secondAttribute="bottom" constant="12" id="Wxk-bD-iKQ"/>
+                            <constraint firstItem="LKq-uK-a6i" firstAttribute="leading" secondItem="Nk5-wI-Vsh" secondAttribute="leading" constant="12" id="XWj-sd-bKe"/>
+                            <constraint firstItem="Nk5-wI-Vsh" firstAttribute="trailing" secondItem="LKq-uK-a6i" secondAttribute="trailing" constant="12" id="exR-i2-SI4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="LKq-uK-a6i" id="tKO-XR-iLX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="raS-d8-346" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
