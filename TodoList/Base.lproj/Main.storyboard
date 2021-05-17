@@ -95,32 +95,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JCK-T7-yO9">
-                                <rect key="frame" x="20" y="97" width="374" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PM-qu-BJx">
+                                <rect key="frame" x="20" y="64" width="374" height="52"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="hIR-aX-MmN"/>
+                                    <constraint firstAttribute="height" constant="52" id="vmo-aX-In1"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XjG-ba-csq"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="JCK-T7-yO9" firstAttribute="top" secondItem="XjG-ba-csq" secondAttribute="top" constant="53" id="5Qi-St-FJa"/>
-                            <constraint firstItem="XjG-ba-csq" firstAttribute="trailing" secondItem="JCK-T7-yO9" secondAttribute="trailing" constant="20" id="gur-Ph-0C0"/>
-                            <constraint firstItem="JCK-T7-yO9" firstAttribute="leading" secondItem="XjG-ba-csq" secondAttribute="leading" constant="20" id="jvl-EJ-pyN"/>
+                            <constraint firstItem="6PM-qu-BJx" firstAttribute="top" secondItem="XjG-ba-csq" secondAttribute="top" constant="20" id="BHH-GK-61Z"/>
+                            <constraint firstItem="XjG-ba-csq" firstAttribute="trailing" secondItem="6PM-qu-BJx" secondAttribute="trailing" constant="20" id="KNP-pf-Fym"/>
+                            <constraint firstItem="6PM-qu-BJx" firstAttribute="leading" secondItem="XjG-ba-csq" secondAttribute="leading" constant="20" id="VKg-YZ-Sz1"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="JCK-T7-yO9" id="d6j-BE-UGm"/>
+                        <outlet property="field" destination="6PM-qu-BJx" id="H4t-n1-kbV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0l-01-KD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518.84057971014499" y="740.625"/>
+            <point key="canvasLocation" x="519" y="741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mb8-Va-nbh">
@@ -142,9 +140,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

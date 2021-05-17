@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         }
         
         updateTasks()
-        //print(tasks)
     }
     
     func updateTasks() {
@@ -86,20 +85,9 @@ extension ViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             tasks.remove(at: indexPath.row)
-            //UserDefaults.standard.removeObject(forKey: "\(tasks[indexPath.row])")
-            //UserDefaults.standard.setValue(, forKey: "tasks")
-            
-           
-            //updateTasks()
-            UserDefaults.standard.setValue(tasks, forKey: "tasks")
-//            guard let counts = UserDefaults.standard.value(forKey: "count")as? Int else {
-//                return
-//            }
-          //  UserDefaults.standard.set(,forKey: "tasks")
+            UserDefaults.standard.removeObject(forKey: "")
             tableView.reloadData()
-            print(tasks)
         }
     }
-    
 }
 

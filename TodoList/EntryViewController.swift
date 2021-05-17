@@ -7,20 +7,18 @@
 
 import UIKit
 
-class EntryViewController: UIViewController, UITextViewDelegate {
-  //  @IBOutlet var field : UITextField!
-    @IBOutlet var textView :UITextView!
+class EntryViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet var field : UITextField!
     
     var update:(()->Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   field.delegate = self
-        textView.delegate = self
+        field.delegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "save", style: .done, target: self, action: #selector(saveTask))
         
     }
-    func textViewShouldReturn ( _ textView: UITextView ) -> Bool {
+    func textFieldShouldReturn ( _ textfield: UITextField ) -> Bool {
         saveTask()
         
         return true
@@ -29,7 +27,7 @@ class EntryViewController: UIViewController, UITextViewDelegate {
     
     
     @objc func saveTask(){
-        guard let text = textView.text, !text.isEmpty else {
+        guard let text = field.text, !text.isEmpty else {
             return
         }
         
