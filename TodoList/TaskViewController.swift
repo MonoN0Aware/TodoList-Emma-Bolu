@@ -22,5 +22,9 @@ class TaskViewController: UIViewController {
     
     @objc func deleteTask(){
         //UserDefaults.setValue(newCount, forKey: "count")
+       // guard let item = self.task else{return}
+        
+      //   task?.remove(at:indexPath.row)
+        
     }
 }
