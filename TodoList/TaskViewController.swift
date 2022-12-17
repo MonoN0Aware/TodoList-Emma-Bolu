@@ -2,7 +2,6 @@
 //  TaskViewController.swift
 //  TodoList
 //
-//  Created by Decagon on 15/05/2021.
 //
 
 import UIKit
